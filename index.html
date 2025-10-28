@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" class="sticky scroll-smooth">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portofolio</title>
+    <!-- kembali ke atas -->
+    <nav id="atas"></nav>
+  </head>
+  <body class="bg-gray-200 overflow-x-hidden">
+    <!-- Start NavBar Section -->
+    <section id="navbar" class="sticky top-0 z-50">
+      <header class="justify-between bg-gradient-to-br from-white via-gray-200 to-slate-300 rounded-b-xl shadow-lg absolute top-0 left-0 w-full flex items-center z-10">
+        <!-- logo -->
+        <div class="relative px-4">
+          <h1 class="font-bold text-emerald-500 block text-lg py-6">fadhiilfiannata.</h1>
+        </div>
+        <nav>
+          <!-- navigasi -->
+          <ul class="hidden items-start justify-start relative gap-1 w-[100%] z-50 md:flex lg:flex lg:items-center lg:justify-end">
+            <li class="h-[50px]"><a href="#hero" class="h-full pr-8 flex items-center cursor-pointer hover:text-emerald-300 transition duration-300">Home</a></li> 
+            <li class="h-[50px]"><a href="#portofolio" class="h-full pr-8 flex items-center cursor-pointer hover:text-emerald-300 transition duration-300">Portofolio</a></li>
+            <li class="h-[50px]"><a href="#contact" class="h-full pr-8 flex items-center cursor-pointer hover:text-emerald-300 transition duration-300">Contact</a></li>
+          </ul>
+          <!-- button -->
+          <div class="md:hidden lg:hidden px-4">
+            <button id="menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </nav>
+        <!-- mobile view -->
+        <div id="mobile-menu" class="hidden bg-white/20 w-1/2 float-end mt-2 py-4  rounded-md shadow-lg">
+         <div class="flex-col items-center text-center space-y-4 px-4 py-2">
+           <ul>
+             <li class="h-[50px]"><a href="#hero" class="w-full h-full pr-8 flex items-center cursor-pointer hover:text-emerald-300 transition duration-300">Home</a></li> 
+             <li class="h-[50px]"><a href="#portofolio" class="w-full h-full pr-8 flex items-center cursor-pointer hover:text-emerald-300 transition duration-300">Portofolio</a></li>
+             <li class="h-[50px]"><a href="#contact" class="w-full h-full pr-8 flex items-center cursor-pointer hover:text-emerald-300 transition duration-300">Contact</a></li>
+           </ul>
+         </div>
+        </div>
+      </header>
+    </section>
+    <!-- End Navbar Section -->
+    
+    <!-- Start Hero Section -->
+    <section id="hero" class="pt-36 pb-32 lg:px-30">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-lg font-semibold text-emerald-500 mb-1 lg:mb-2 lg:text-3xl">
+              Hi Para Sepuh👋, saya
+              <span class="block font-bold text-4xl text-slate-900 lg:text-6xl"
+                >Fadhiil Fiannata Nugroho</span
+              >
+            </h1>
+            <h2 class="block text-2xl text-slate-500 mb-4">
+              Ilmu Komputer | <span class="font-bold text-slate-900">TI</span>
+            </h2>
+            <span class="text-slate-400 md:text-justify lg:text-justify">
+              <p>Saya adalah seorang Web Developer yang berfokus pada menciptakan visual yang komunikatif, estetik, dan responsif. Dengan latar belakang di bidang Desain Grafis dan ketertarikan mendalam terhadap seni digital, saya menggabungkan kreativitas dan logika untuk menghasilkan website yang tidak hanya menarik, tetapi juga fungsional.</p>
+            </span>
+          </div>
+          <div class="w-full self-end lg:w-1/2">
+            <div class="relative mt-10">
+              <img src="src/Fadhiil FN.jpg" alt="Fadhiil" class="rounded-3xl w-50 max-w-full mx-auto shadow-2xl lg:w-70 lg:right-0">
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- End Hero Section -->
+
+    <!-- Start Portofolio Section -->
+      <section id="portofolio" class=" bg-slate-600 pt-24 pb-16">
+        <div class="container">
+          <div class="w-full px-4 mb-10">
+            <div class="max-w-xl mx-auto text-center mb-16">
+              <h4 class="font-semibold txt-lg text-emerald-500 mb-2">Portofolio</h4>
+              <h2 class="font-bold text-gray-200 text-3xl mb-4">Proyek Saya</h2>
+              <p class="font-medium text-md text-slate-400">Berikut adalah beberapa karya desain grafis yang telah saya kerjakan. Setiap poster dirancang dengan perhatian terhadap detail, estetika, dan fungsi. Saya percaya bahwa visual yang kuat dapat menyampaikan pesan dengan lebih efektif dan membangun kesan yang mendalam.</p>
+            </div>
+          </div>
+        </div>
+        <div class="overflow-hidden w-[500%] lg:w-[200%] pb-6 ">
+          <div class="flex flex-wrap animate-scroll justify-center">
+            <div class="flex w-1/2 gap-4 items-center content-center pr-2 ">
+              <div class="rounded-md shadow-md overflow-hidden bg-white ">
+                <img src="src/Salinan dari Salinan dari Tambahkan judul_20251027_205109_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/POSKO SIXTEEN_20251028_123425_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/Isra Mi'raj_20251028_124533_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/classmeeting_20251028_123242_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/19 July 2024 - 25 July 2024_20251028_123634_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+            </div>
+            <div class="flex w-1/2 gap-4 items-center content-center pl-2">
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/Salinan dari Salinan dari Tambahkan judul_20251027_205109_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/POSKO SIXTEEN_20251028_123425_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/Isra Mi'raj_20251028_124533_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/classmeeting_20251028_123242_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+              <div class="rounded-md shadow-md overflow-hidden bg-white">
+                <img src="src/19 July 2024 - 25 July 2024_20251028_123634_0000.jpg" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- End Portofolio Section -->
+    
+    <!-- Start Contact Section -->
+      <section id="contact" class="bg-white pt-16 pb-20 lg:mx-80 m-6 rounded-xl shadow-xl">
+        <div class="container">
+          <form>
+            <div class="max-w-xl mx-auto text-center mb-10">
+              <h4 class="font-semibold txt-lg text-emerald-500 mb-2">Contact</h4>
+              <h2 class="font-bold text-slate-900 text-3xl mb-4">Hubungi Saya</h2>
+              <p class="font-medium text-md text-slate-400 px-5">
+                Punya ide menarik, proyek seru, atau sekadar ingin ngobrol soal desain dan coding? Kirim pesan lewat formulir ini, saya dengan senang hati mendengar dan berbagi. Kolaborasi selalu jadi hal yang menyenangkan!
+              </p>
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base font-bold">Nama</label>
+              <input type="text" id="name" class="w-full bg-slate-200 text-slate-900 p-2 rounded-md focus:outline-none focus:ring-emerald-500 focus:ring-1 focus:border-emerald-500">
+              <form action=""></form>
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base font-bold">E-mail</label>
+              <input type="email" id="email" class="w-full bg-slate-200 text-slate-900 p-2 rounded-md focus:outline-none focus:ring-emerald-500 focus:ring-1 focus:border-emerald-500">
+              <form action=""></form>
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base font-bold">Pesan</label>
+              <textarea type="message" id="message" class="w-full bg-slate-200 text-slate-900 p-2 h-32 rounded-md focus:outline-none focus:ring-emerald-500 focus:ring-1 focus:border-emerald-500"></textarea>
+            </div>
+            <div class="w-full text-center px-4 mb-8">
+              <button type="submit" class="w-full text-base font-semibold bg-emerald-500 text-white py-3 rounded-full lg:w-24 hover:text-slate-900 cursor-pointer hover:bg-emerald-300">Kirim</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    <!-- End Contact Section -->
+     
+    <!-- Start Footer -->
+      <div class=" bg-gray-900 flex justify-center items-center pt-10 pb-16">
+        <a href="#atas" class="text-white hover:text-slate-950 hover:bg-white py-3 px-10 rounded-full">Kembali</a>
+      </div>
+    <!-- End Footer -->
+
+    <!-- Javascript -->
+    <script src="index.js"></script>
+  </body>
+</html>
