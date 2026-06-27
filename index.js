@@ -1,18 +1,33 @@
+// Inisialisasi menu
+const menuToggle = document.getElementById("menu-toggle"); // button
+const mobileMenu = document.getElementById("mobile-menu"); // menu dari home-contact
+const iconMenu = menuToggle.querySelector(".fa-bars, .fa-xmark"); // icon button
+const linkMenu = document.querySelectorAll(".link-menu"); // link dari menu
+
 // Mobile menu toggling
-document.getElementById("menu-toggle").addEventListener("click", function () {
-  const mobileMenu = document.getElementById("mobile-menu");
+menuToggle.addEventListener("click", function () {
   mobileMenu.classList.toggle("hidden");
+
+  if (iconMenu) {
+    if (iconMenu.classList.contains("fa-bars")) {
+      iconMenu.classList.replace("fa-bars", "fa-xmark");
+    } else {
+      iconMenu.classList.replace("fa-xmark", "fa-bars");
+    }
+  }
 });
 
-document
-  .getElementsByClassName("fa-bars")[0]
-  .addEventListener("click", function () {
-    if (this.classList.contains("fa-bars")) {
-      this.classList.replace("fa-bars", "fa-xmark");
-    } else {
-      this.classList.replace("fa-xmark", "fa-bars");
+// Mobile menu setelah diklik menu toggle menutup
+linkMenu.forEach(function (link) {
+  link.addEventListener("click", function () {
+    mobileMenu.classList.toggle("hidden");
+
+
+    if (iconMenu) {
+      iconMenu.classList.replace("fa-xmark", "fa-bars");
     }
   });
+});
 
 // --- TRANSLATION LOGIC ---
 const translations = {
