@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="sticky scroll-smooth">
+<html lang="id" class="sticky scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -17,6 +17,7 @@
 
 <body
   class="bg-gray-200 dark:bg-slate-900 text-slate-900 dark:text-slate-100 overflow-x-hidden transition-colors duration-300">
+
   <!-- Start NavBar Section -->
   <section id="navbar" class="sticky backdrop-blur-md top-0 z-50">
     <header
@@ -26,10 +27,17 @@
         <h1 class="font-bold text-emerald-500 block text-lg py-6"><a href="index.html">fadhiilfiannata.</a></h1>
       </div>
       <nav>
-        <!-- navigasi -->
+        <!-- navigasi desktop -->
         <ul class="hidden items-center justify-end relative gap-1 w-[100%] z-50 md:flex lg:flex">
           <li class="h-[50px]"><a href="#hero" data-translate="nav_home"
               class="h-full pr-6 flex items-center cursor-pointer text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 font-medium transition duration-300">Home</a>
+          </li>
+          <li class="h-[50px]"><a href="#education-experience" data-translate="nav_experience"
+              class="h-full pr-6 flex items-center cursor-pointer text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 font-medium transition duration-300">Pendidikan
+              &amp; Pengalaman</a>
+          </li>
+          <li class="h-[50px]"><a href="#skills" data-translate="nav_skills"
+              class="h-full pr-6 flex items-center cursor-pointer text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 font-medium transition duration-300">Keterampilan</a>
           </li>
           <li class="h-[50px]"><a href="#portofolio" data-translate="nav_portfolio"
               class="h-full pr-6 flex items-center cursor-pointer text-slate-700 dark:text-slate-200 hover:text-emerald-500 dark:hover:text-emerald-400 font-medium transition duration-300">Portofolio</a>
@@ -52,25 +60,32 @@
             </button>
           </li>
         </ul>
-        <!-- button -->
+        <!-- mobile toggle button -->
         <div class="md:hidden lg:hidden px-4 z-50 flex items-center gap-3">
           <button id="menu-toggle" class="text-slate-800 dark:text-slate-200">
             <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </nav>
-      <!-- mobile view -->
+      <!-- mobile view dropdown -->
       <div id="mobile-menu"
         class="hidden md:hidden lg:hidden bg-white/90 dark:bg-slate-900/95 backdrop-blur-md w-1/2 float-end mt-2 py-4 rounded-md shadow-lg border border-slate-200/50 dark:border-slate-800/50 transition-colors duration-300">
-        <div class="flex-col items-center text-center space-y-4 px-4 py-2">
+        <div class="flex-col items-center text-center space-y-2 px-4 py-2">
           <ul>
-            <li class="h-[50px]"><a href="#hero" data-translate="nav_home"
+            <li class="h-[40px]"><a href="#hero" data-translate="nav_home"
                 class="link-menu w-full h-full justify-center flex items-center cursor-pointer text-slate-800 dark:text-slate-200 hover:text-emerald-500 transition duration-300">Home</a>
             </li>
-            <li class="h-[50px]"><a href="#portofolio" data-translate="nav_portfolio"
+            <li class="h-[40px]"><a href="#education-experience" data-translate="nav_experience"
+                class="link-menu w-full h-full justify-center flex items-center cursor-pointer text-slate-800 dark:text-slate-200 hover:text-emerald-500 transition duration-300">Pendidikan
+                &amp; Pengalaman</a>
+            </li>
+            <li class="h-[40px]"><a href="#skills" data-translate="nav_skills"
+                class="link-menu w-full h-full justify-center flex items-center cursor-pointer text-slate-800 dark:text-slate-200 hover:text-emerald-500 transition duration-300">Keterampilan</a>
+            </li>
+            <li class="h-[40px]"><a href="#portofolio" data-translate="nav_portfolio"
                 class="link-menu w-full h-full justify-center flex items-center cursor-pointer text-slate-800 dark:text-slate-200 hover:text-emerald-500 transition duration-300">Portofolio</a>
             </li>
-            <li class="h-[50px]"><a href="#contact" data-translate="nav_contact"
+            <li class="h-[40px]"><a href="#contact" data-translate="nav_contact"
                 class="link-menu h-full justify-center flex items-center cursor-pointer text-slate-800 dark:text-slate-200 hover:text-emerald-500 transition duration-300">Contact</a>
             </li>
           </ul>
@@ -92,11 +107,11 @@
       </div>
     </header>
   </section>
-  <!-- End Navbar Section -->
+  <!-- End NavBar Section -->
 
   <!-- Start Hero Section -->
   <section id="hero" class="pt-36 pb-32 lg:px-30 transition-colors duration-300">
-    <div class="container">
+    <div class="container mx-auto">
       <div class="flex flex-wrap">
         <div class="w-full self-center px-4 lg:w-1/2">
           <h1 class="text-lg font-semibold text-emerald-500 mb-1 lg:mb-2 lg:text-3xl">
@@ -112,11 +127,11 @@
           </h2>
           <span
             class="text-slate-600 dark:text-slate-300 md:text-justify lg:text-justify transition-colors duration-300">
-            <p data-translate="hero_description">Saya adalah seorang Web Developer yang berfokus pada menciptakan visual
-              yang komunikatif, estetik, dan
-              responsif. Dengan latar belakang di bidang Desain Grafis dan ketertarikan mendalam terhadap seni digital,
-              saya menggabungkan kreativitas dan logika untuk menghasilkan website yang tidak hanya menarik, tetapi juga
-              fungsional.</p>
+            <p data-translate="hero_description">Saya adalah seorang mahasiswa Ilmu Komputer di UDINUS yang berfokus
+              pada visual
+              komunikasi yang estetis dan responsive.
+              Berbekal pengalaman organisasi di SMA, saya bertekad terus melahirkan karya digital yang berdampak
+              positif.</p>
           </span>
         </div>
         <div class="w-full self-end lg:w-1/2">
@@ -126,80 +141,320 @@
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- End Hero Section -->
 
-  <!-- Start Portofolio Section -->
-  <section id="portofolio"
-    class="bg-slate-600 dark:bg-slate-950 pt-24 pb-16 relative overflow-x-hidden transition-colors duration-300">
-    <div class="container">
-      <div class="w-full px-4 mb-10">
-        <div class="max-w-xl mx-auto text-center mb-16">
-          <h4 class="font-semibold txt-lg text-emerald-500 mb-2">Portofolio</h4>
-          <h2 class="font-bold text-gray-200 text-3xl mb-4" data-translate="portfolio_subtitle">Proyek Saya</h2>
-          <p class="font-medium text-md text-slate-350 dark:text-slate-400" data-translate="portfolio_description">
-            Berikut adalah beberapa karya desain grafis yang telah saya
-            kerjakan. Setiap poster dirancang dengan perhatian terhadap detail, estetika, dan fungsi. Saya percaya bahwa
-            visual yang kuat dapat menyampaikan pesan dengan lebih efektif dan membangun kesan yang mendalam.</p>
-        </div>
+  <!-- Start Education & Experience Section -->
+  <section id="education-experience" class="py-16 max-w-6xl mx-auto px-4 transition-colors duration-300">
+    <div class="container mx-auto">
+      <div class="max-w-xl mx-auto text-center mb-10">
+        <h4 class="font-semibold text-lg text-emerald-500 mb-2" data-translate="exp_section_tag">Pendidikan &amp;
+          Pengalaman</h4>
+        <h2 class="font-bold text-slate-900 dark:text-slate-50 text-3xl mb-3" data-translate="exp_section_title">Latar
+          Belakang</h2>
+        <p class="font-medium text-sm text-slate-600 dark:text-slate-400" data-translate="exp_section_subtitle">
+          Jejak pendidikan akademis dan pengalaman organisasi yang telah saya jalani.
+        </p>
       </div>
-    </div>
-    <div class="w-[500%] lg:w-[200%] pb-6 ">
-      <div class="flex flex-wrap animate-scroll justify-center">
-        <div class="flex w-1/2 gap-4 items-center content-center pr-2 ">
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/MPLS.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+        <!-- Pendidikan Card Grid -->
+        <div
+          class="bg-white dark:bg-slate-800/80 p-5 rounded-2xl shadow-lg border border-slate-300 dark:border-slate-700/50 transition-colors duration-300">
+          <div class="flex items-center gap-3 mb-5 border-b border-slate-200 dark:border-slate-700 pb-2.5">
+            <i class="fa-solid fa-graduation-cap text-xl text-emerald-500"></i>
+            <h3 class="font-bold text-xl text-slate-900 dark:text-white" data-translate="edu_title">Pendidikan</h3>
           </div>
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/POSKO SIXTEEN.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
-          </div>
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/Isra Mi'raj.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
-          </div>
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/Classmeeting.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
-          </div>
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/HUT RI.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
-          </div>
-        </div>
-        <div class="flex w-1/2 gap-4 items-center content-center pl-2">
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/MPLS.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
-          </div>
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/POSKO SIXTEEN.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
-          </div>
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/Isra Mi'raj.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
-          </div>
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/Classmeeting.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
-          </div>
-          <div
-            class="rounded-md shadow-md overflow-hidden bg-white dark:bg-slate-850 p-1 transition-colors duration-300">
-            <img src="src/HUT RI.webp" alt="HUT RI" class="w-full mx-auto shadow-2xl lg:right-0">
+
+          <div class="space-y-5">
+            <!-- UDINUS -->
+            <div class="relative pl-5 border-l-2 border-emerald-500 space-y-1">
+              <span
+                class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-600 dark:text-emerald-400">
+                2025 - Sekarang
+              </span>
+              <h4 class="font-bold text-base text-slate-900 dark:text-slate-100">Universitas Dian Nuswantoro / UDINUS
+              </h4>
+              <p class="text-xs font-semibold text-emerald-500">S1 Teknik Informatika</p>
+            </div>
+
+            <!-- SMAN 16 -->
+            <div class="relative pl-5 border-l-2 border-slate-400 dark:border-slate-600 space-y-1">
+              <span
+                class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-300 dark:bg-slate-700 text-slate-800 dark:text-slate-200">
+                2022 - 2024
+              </span>
+              <h4 class="font-bold text-base text-slate-900 dark:text-slate-100">SMAN 16 Semarang</h4>
+              <p class="text-xs font-semibold text-slate-500 dark:text-slate-400">MIPA - Kurikulum Merdeka</p>
+            </div>
           </div>
         </div>
+
+        <!-- Pengalaman Organisasi Card Grid -->
+        <div
+          class="bg-white dark:bg-slate-800/80 p-5 rounded-2xl shadow-lg border border-slate-300 dark:border-slate-700/50 transition-colors duration-300">
+          <div class="flex items-center gap-3 mb-5 border-b border-slate-200 dark:border-slate-700 pb-2.5">
+            <i class="fa-solid fa-users text-xl text-emerald-500"></i>
+            <h3 class="font-bold text-xl text-slate-900 dark:text-white" data-translate="org_title">Pengalaman
+              Organisasi</h3>
+          </div>
+
+          <div class="space-y-5">
+            <!-- OSIS Sie 9 -->
+            <div class="relative pl-5 border-l-2 border-emerald-500 space-y-1">
+              <span
+                class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-600 dark:text-emerald-400">
+                2022 - 2024
+              </span>
+              <h4 class="font-bold text-base text-slate-900 dark:text-slate-100">Anggota OSIS Sie 9 (Teknologi Informasi
+                &amp; Komunikasi)</h4>
+              <p class="text-xs font-semibold text-emerald-500">SMAN 16 Semarang</p>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pt-0.5" data-translate="org_sie9_desc">
+                Bertanggung jawab merancang media publikasi digital, poster event sekolah, dan infografis siswa.
+              </p>
+            </div>
+
+            <!-- Admin IG OSIS -->
+            <div class="relative pl-5 border-l-2 border-emerald-500 space-y-1">
+              <span
+                class="inline-block px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-600 dark:text-emerald-400">
+                2022 - 2024
+              </span>
+              <h4 class="font-bold text-base text-slate-900 dark:text-slate-100">Admin Instagram Resmi OSIS
+                (@oskasixteen)</h4>
+              <p class="text-xs font-semibold text-emerald-500">SMAN 16 Semarang</p>
+              <p class="text-xs text-slate-600 dark:text-slate-400 pt-0.5" data-translate="org_admin_desc">
+                Mengelola konten postingan feed, story, twibbon event, serta konsistensi identitas visual akun Instagram
+                OSIS.
+              </p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
+  <!-- End Education & Experience Section -->
+
+  <!-- Start Skills Section -->
+  <section id="skills" class="py-16 max-w-6xl mx-auto px-4 transition-colors duration-300">
+    <div class="container mx-auto">
+      <div class="max-w-xl mx-auto text-center mb-10">
+        <h4 class="font-semibold text-lg text-emerald-500 mb-2" data-translate="skills_section_tag">Keterampilan</h4>
+        <h2 class="font-bold text-slate-900 dark:text-slate-50 text-3xl mb-3" data-translate="skills_section_title">
+          Skills &amp; Tools</h2>
+        <p class="font-medium text-sm text-slate-600 dark:text-slate-400" data-translate="skills_section_subtitle">
+          Kombinasi perangkat lunak dan soft skills pendukung dalam proses pembuatan desain dan web.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Category 1: Software & Tools -->
+        <div
+          class="bg-white dark:bg-slate-800/80 p-5 rounded-2xl shadow-lg border border-slate-300 dark:border-slate-700/50">
+          <h3
+            class="font-bold text-lg text-slate-900 dark:text-white mb-3 pb-2 border-b border-slate-200 dark:border-slate-700 flex items-center gap-2">
+            <i class="fa-solid fa-toolbox text-emerald-500"></i>
+            <span data-translate="skills_cat1_title">Software &amp; Tools</span>
+          </h3>
+
+          <div class="flex flex-wrap gap-2.5">
+            <div class="px-3.5 py-2 flex items-center gap-2.5 font-semibold text-xs">
+              <img src="src/app/adobe-lightroom-icon.png" alt="Adobe Lightroom" class="w-20 h-20">
+            </div>
+
+            <div class="px-3.5 py-2 flex items-center gap-2.5 font-semibold text-xs">
+              <img src="src/app/canva-icon.png" alt="Canva" class="w-20 h-20">
+            </div>
+
+            <div class="px-3.5 py-2 flex items-center gap-2.5 font-semibold text-xs">
+              <img src="src/app/capcut-icon.png" alt="CapCut" class="w-20 h-20">
+            </div>
+
+            <div class="px-3.5 py-2 flex items-center gap-2.5 font-semibold text-xs">
+              <img src="src/app/visual-studio-code-icon.png" alt="VS Code" class="w-20 h-20">
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Personal & Soft Skills -->
+        <div
+          class="bg-white dark:bg-slate-800/80 p-5 rounded-2xl shadow-lg border border-slate-300 dark:border-slate-700/50">
+          <h3
+            class="font-bold text-lg text-slate-900 dark:text-white mb-3 pb-2 border-b border-slate-200 dark:border-slate-700 flex items-center gap-2">
+            <i class="fa-solid fa-lightbulb text-emerald-500"></i>
+            <span data-translate="skills_cat2_title">Personal &amp; Soft Skills</span>
+          </h3>
+
+          <div class="flex flex-wrap justify-between gap-2">
+            <span
+              class="px-3 py-1.5 bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-lg text-xs font-bold border border-slate-200 dark:border-slate-600">Creativity</span>
+            <span
+              class="px-3 py-1.5 bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-lg text-xs font-bold border border-slate-200 dark:border-slate-600">Teamwork</span>
+            <span
+              class="px-3 py-1.5 bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-lg text-xs font-bold border border-slate-200 dark:border-slate-600">Communication</span>
+            <span
+              class="px-3 py-1.5 bg-slate-100 dark:bg-slate-700 text-slate-800 dark:text-slate-200 rounded-lg text-xs font-bold border border-slate-200 dark:border-slate-600">Problem
+              Solving</span>
+
+            <div
+              class="w-full mt-2 p-3 bg-slate-100 dark:bg-slate-700/60 rounded-xl border border-slate-200 dark:border-slate-600">
+              <h4 class="font-bold text-xs text-slate-900 dark:text-white mb-0.5"><i
+                  class="fa-solid fa-laptop-code text-emerald-500 mr-1.5"></i>Web Development</h4>
+              <p class="text-xs text-slate-600 dark:text-slate-300">Laravel, Next.js, HTML, CSS, JS</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End Skills Section -->
+
+  <!-- Start Portofolio Section (2 SUB-BAGIAN CAROUSEL PROPORSI IDEAL) -->
+  <section id="portofolio"
+    class="bg-slate-600 dark:bg-slate-950 pt-20 pb-16 relative overflow-x-hidden transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="w-full mb-10">
+        <div class="max-w-xl mx-auto text-center mb-10">
+          <h4 class="font-semibold text-lg text-emerald-500 mb-2">Portofolio</h4>
+          <p class="font-medium text-sm text-slate-300 dark:text-slate-400" data-translate="portfolio_description">
+            Berikut adalah beberapa karya desain grafis yang telah saya kerjakan. Setiap karya dirancang dengan
+            perhatian terhadap detail, estetika, dan fungsi.
+          </p>
+        </div>
+
+        <!-- Sub-bagian 1: Pamflet -->
+        <div class="mb-12">
+          <h2 class="font-bold text-gray-200 text-2xl mb-3 border-b border-slate-500 dark:border-slate-800 pb-2"
+            data-translate="sub_pamflet_title">1. Pamflet &amp; Poster</h2>
+
+          <div class="carousel-container relative" id="pamflet-carousel-wrapper">
+            <button class="carousel-btn prev" id="pamflet-prev" aria-label="Previous"><i
+                class="fa-solid fa-chevron-left text-xs"></i></button>
+            <button class="carousel-btn next" id="pamflet-next" aria-label="Next"><i
+                class="fa-solid fa-chevron-right text-xs"></i></button>
+
+            <div class="carousel-track" id="pamflet-track">
+              <!-- Item 1 -->
+              <div class="carousel-slide">
+                <div
+                  class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+                  <img src="src/pamflet/Akasa Niranjana.webp" alt="Akasa Niranjana"
+                    class="w-full h-auto rounded cursor-pointer lightbox-trigger"
+                    data-img="src/pamflet/Akasa Niranjana.webp" data-title="Akasa Niranjana">
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="carousel-slide">
+                <div
+                  class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+                  <img src="src/pamflet/Pesantren Kilat.webp" alt="Pesantren Kilat"
+                    class="w-full h-auto rounded cursor-pointer lightbox-trigger"
+                    data-img="src/pamflet/Pesantren Kilat.webp" data-title="Pesantren Kilat">
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="carousel-slide">
+                <div
+                  class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+                  <img src="src/pamflet/MPLS.webp" alt="Pamflet MPLS"
+                    class="w-full h-auto rounded cursor-pointer lightbox-trigger" data-img="src/pamflet/MPLS.webp"
+                    data-title="Pamflet MPLS">
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div class="carousel-slide">
+                <div
+                  class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+                  <img src="src/pamflet/POSKO SIXTEEN.webp" alt="Posko Sixteen"
+                    class="w-full h-auto rounded cursor-pointer lightbox-trigger"
+                    data-img="src/pamflet/POSKO SIXTEEN.webp" data-title="Posko Sixteen">
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div class="carousel-slide">
+                <div
+                  class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+                  <img src="src/pamflet/Isra Mi'raj.webp" alt="Isra Mi'raj"
+                    class="w-full h-auto rounded cursor-pointer lightbox-trigger"
+                    data-img="src/pamflet/Isra Mi'raj.webp" data-title="Isra Mi'raj">
+                </div>
+              </div>
+
+              <!-- Item 6 -->
+              <div class="carousel-slide">
+                <div
+                  class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+                  <img src="src/pamflet/Classmeeting.webp" alt="Classmeeting"
+                    class="w-full h-auto rounded cursor-pointer lightbox-trigger"
+                    data-img="src/pamflet/Classmeeting.webp" data-title="Classmeeting">
+                </div>
+              </div>
+
+              <!-- Item 7 -->
+              <div class="carousel-slide">
+                <div
+                  class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+                  <img src="src/pamflet/HUT RI.webp" alt="HUT RI"
+                    class="w-full h-auto rounded cursor-pointer lightbox-trigger" data-img="src/pamflet/HUT RI.webp"
+                    data-title="HUT RI">
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-1.5 mt-3" id="pamflet-dots"></div>
+          </div>
+        </div>
+
+
+        <!-- Sub-bagian 2: Twibbon -->
+        <div class="mb-12">
+          <h2 class="font-bold text-gray-200 text-2xl mb-4 border-b border-slate-500 dark:border-slate-800 pb-2"
+            data-translate="sub_twibbon_title">2. Twibbon</h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 items-center justify-center">
+            <!-- Item 1 -->
+            <div
+              class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+              <img src="src/twibbon/1_20260729_110903_0000.webp" alt="Twibbon 1"
+                class="w-full rounded cursor-pointer lightbox-trigger"
+                data-img="src/twibbon/1_20260729_110903_0000.webp" data-title="Twibbon #1">
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+              <img src="src/twibbon/2_20260729_110903_0001.webp" alt="Twibbon 2"
+                class="w-full rounded cursor-pointer lightbox-trigger"
+                data-img="src/twibbon/2_20260729_110903_0001.webp" data-title="Twibbon #2">
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="rounded-md overflow-hidden bg-white dark:bg-slate-850 p-1 shadow-md hover:scale-[1.02] transition duration-300">
+              <img src="src/twibbon/3_20260729_110903_0002.webp" alt="Twibbon 3"
+                class="w-full rounded cursor-pointer lightbox-trigger"
+                data-img="src/twibbon/3_20260729_110903_0002.webp" data-title="Twibbon #3">
+            </div>
+          </div>
+        </div>
+
+
+  </section>
   <!-- End Portofolio Section -->
+
   <!-- Start Contact Section -->
   <section id="contact"
     class="bg-white dark:bg-slate-800 pt-16 pb-20 lg:mx-30 m-6 rounded-xl shadow-xl transition-colors duration-300">
-    <div class="container">
+    <div class="container mx-auto">
       <div class="max-w-xl mx-auto text-center mb-10">
-        <h4 class="font-semibold txt-lg text-emerald-500 mb-2">Contact</h4>
+        <h4 class="font-semibold text-lg text-emerald-500 mb-2">Contact</h4>
         <h2 class="font-bold text-slate-900 dark:text-slate-50 text-3xl mb-4" data-translate="contact_subtitle">Hubungi
           Saya</h2>
         <p class="font-medium text-md text-slate-500 dark:text-slate-400 px-5" data-translate="contact_description">
@@ -243,6 +498,23 @@
     </div>
   </section>
   <!-- End Contact Section -->
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal"
+    class="fixed inset-0 z-50 hidden bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full bg-slate-900 rounded-3xl overflow-hidden border border-slate-800 shadow-2xl">
+      <button id="modal-close"
+        class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-slate-800/80 text-white hover:bg-red-500 transition flex items-center justify-center cursor-pointer">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div class="p-4 max-h-[80vh] flex items-center justify-center overflow-hidden">
+        <img id="modal-img" src="" alt="Modal View" class="max-h-[75vh] w-auto object-contain rounded-xl">
+      </div>
+      <div class="px-6 py-4 bg-slate-800 text-center">
+        <h4 id="modal-title" class="font-bold text-lg text-white"></h4>
+      </div>
+    </div>
+  </div>
 
   <!-- Start Footer -->
   <div
